@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contacter.css">
+    <title>Contact form</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">AccessMa</div>
+        <ul>
+            <li class="search-icon">
+                <input type="search" placeholder="Recherche">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+            <li><a href="index.html">Acceuil</a></li>
+            <li>
+                <a href="#">Choisir</a>
+                    <ul>
+                    <li><a href="Marrakech.html">Marrakech</a></li>
+                    <li><a href="Casablanca.html">Casablanca</a></li>
+                    <li><a href="Tanger.html">Tanger</a></li>
+                    <li><a href="Tétouan.html">Tétoin</a></li>
+                    </ul>
+            </li>
+            <li><a href="Informations.html">Informations</a></li>
+            <li><a href="Nous.html">Nous</a></li>
+            <li><a href="contacter.html">Contacter</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Contacter Nous</h1>
+        <p>Pensez à nous contacter quand vous voulez, n'hésitez pas! </p>
+        <form action="Contacter.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject">
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
